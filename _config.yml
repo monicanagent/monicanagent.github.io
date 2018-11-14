@@ -1,3 +1,5 @@
 title: Patrick's Dev Log
 description: Latest CypherPoker.JS updates and fixes
 theme: jekyll-theme-midnight
+github:
+  repository_url: https://github.com/monicanagent/cypherpoker.js
