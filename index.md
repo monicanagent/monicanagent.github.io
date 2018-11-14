@@ -1,6 +1,6 @@
 <details open>
 <summary>Wednesday, November 14, 2018</summary>
-
+<br/>
 One of the surprising problems addressed as part of the fix for issues #4 and #7 was that the EventDispatcher was not differentiating between functions in unique instances of classes (such as CypherPokerContract). As a result, events dispatched for an old instance (on game restart) would be received by a new one and vice versa. This may still be a problem moving forward and will need to be examined in greater detail.<br/>
 <br/>
 The next issue to be looked at was the contract data comparison within the CypherPokerContract class. One of the major causes of this was the inclusion of internal object properties such as the standard <code>toString</code> function which would not appear in contract data returned from the server. Because the server and local contract structures didn't match, further actions wouldn't be processed (as expected). Changes were made to bypass any <code>function</code> types during property comparison.<br/>
