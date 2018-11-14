@@ -1,6 +1,3 @@
-<code>Patrick's\
-<b>CypherPoker.JS Dev Log</b></code>
-
 <details open>
 <summary>Wednesday, November 14, 2018</summary>
 
