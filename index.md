@@ -1,4 +1,18 @@
 <details open>
+<summary>Friday, November 16, 2018</summary>
+<br/>
+It appears that issue <a href="https://github.com/monicanagent/cypherpoker.js/issues/4">#4</a> is now fixed; I only need to test more extensively with different combinations of players and timings (restart immediately at end of game, restart after brief delay, restart with/without switching browser tabs, etc.)<br/>
+<br/>
+Issue <a href="https://github.com/monicanagent/cypherpoker.js/issues/7">#7</a> (player timeout continues beyond the end of the game), is still appearing but I should also be able to address it shortly as there are only a limited number of possible causes for it: a "gameend" event is not being dispatched (unlikely), the listeners for the event are being removed before being dispatched (more likely), an unhandled exception is being thrown during the processing of the event (also quite likely).<br/>
+<br/>
+I've noted that in some instances it's only the user interface that's reporting the timeout (it's not being reported to the contract), which is enouraging because it suggests that the issue may be limited mostly to the <a href="https://github.com/monicanagent/cypherpoker.js/blob/master/src/web/scripts/CypherPokerUI.js">CypherPokerUI</a> class.<br/>
+<br/>
+I was hoping to have these fixes already in place today but I'm quite close and should have them in place by the end of this weekend which means I'll be on track for v0.3.0 (the user interface upgrade).
+</details>
+
+<br/>
+
+<details>
 <summary>Thursday, November 15, 2018</summary>
 <br/>
 Today I'm addressing the inverse of yesterday's issue; namely, the certain data structures such as the players array are captured <i>too</i> early in the creation of a contract when restarting the game.<br/>
