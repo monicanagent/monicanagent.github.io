@@ -1,4 +1,22 @@
 <details open>
+<summary>Monday, November 19, 2018</summary>
+<br/>
+I worked through the weekend but unfortunately I wasn't able to address all of the issues that have come up.<br/>
+<br/>
+The <a href="https://github.com/monicanagent/cypherpoker.js/issues/4">duplicate card selection issue</a> ended up being a simple fix with a surprisingly unintuitive source: card selections from other players were being <a href="https://github.com/monicanagent/cypherpoker.js/blob/485c7639e820d1ee6db5de5d825d690a09640b2b/src/web/scripts/CypherPokerGame.js#L2096">excluded from the selection process if they weren't private</a>. How does excluding cards duplicate them in the contract? Simply because if a card being selected was public it wouldn't be removed from the face-down deck, thereby allowing it to <i>sometimes</i> be selected twice.<br/>
+<br/>
+I haven't logged the other issues I've encountered during my testing but they all have to do with game restarts/ends and specifically to the contract. Although games are now successfully ending and restarting on the first try, the second round causes various validation errors on the server-side contract (though the contracts are mostly completing).<br/>
+<br/>
+Initially I was suspicious that perhaps the validation process had some errors but it turns out that every problem being reported is indeed a failure. For example, in subsequent (after the first game/hand) rounds of deck encryption, the first encryption by the dealer is not being stored to the contract. It took some digging and comparing raw data between the <a href="https://github.com/monicanagent/cypherpoker.js/blob/master/src/server/api/CP_SmartContract.js">server contract</a> and the <a href="https://github.com/monicanagent/cypherpoker.js/blob/master/src/web/scripts/CypherPokerAnalyzer.js">CypherPokerAnalyzer</a> data, which is correct, to figure this out.<br/>
+<br/>
+Although I'll probably need another day or two to knock of the rest of the issues, I am making incremental progress and am seeing definitive patterns emerge as to where the bugs are and what their likely source is. This is a good thing considering the asynchronous complexity of the software.<br/>
+<br/>
+I'm not sure if this will put much of a dent in the v0.3.0 update schedule--for now I'm still optimistic that it won't.
+</details>
+
+<br/>
+
+<details>
 <summary>Friday, November 16, 2018</summary>
 <br/>
 It appears that issue <a href="https://github.com/monicanagent/cypherpoker.js/issues/4">#4</a> is now fixed; I only need to test more extensively with different combinations of players and timings (restart immediately at end of game, restart after brief delay, restart with/without switching browser tabs, etc.)<br/>
