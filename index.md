@@ -1,4 +1,18 @@
 <details open>
+<summary>Tuesday, November 20, 2018</summary>
+<br/>
+I've confirmed that issue <a href="https://github.com/monicanagent/cypherpoker.js/issues/4">4</a> no longer appears and have also fixed the problem where contracts won't restart on subsequent hands--with <a href="https://github.com/monicanagent/cypherpoker.js/issues/9">one exception</a>: in a multi-player game (3+), if one or more players fold in a subsequent hand the post-game analysis doesn't kick off (i.e. the contract doesn't complete). This doesn't occur if all but one players have folded; in other words, at least two players must play the hand to the end.<br/>
+<br/>
+This is most likely a similar issue to those have been plaguing the other contract restarts but on a positive note it appears to be one of the last major issues related to contract handling.<br/>
+<br/>
+There is <a href="https://github.com/monicanagent/cypherpoker.js/issues/8">another contract-based issue</a> in which multiple winning hands are returned in a post-game analysis if the highest winning hand was a high-card but the payout appears to be handled correctly so it's a minor issue.<br/>
+<br/>
+Finally, the <a href="https://github.com/monicanagent/cypherpoker.js/issues/7">player timeout problem</a> is still lingering but it takes a lesser precedence than the other problems above since a timeout on a successfully completed contract simply results in an "invalid contract" error.
+<br/>
+Work continues...
+</details>
+
+<details>
 <summary>Monday, November 19, 2018</summary>
 <br/>
 I worked through the weekend but unfortunately I wasn't able to address all of the issues that have come up.<br/>
