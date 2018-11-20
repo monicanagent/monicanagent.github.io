@@ -7,11 +7,11 @@ This is most likely a similar issue to those have been plaguing the other contra
 <br/>
 There is <a href="https://github.com/monicanagent/cypherpoker.js/issues/8">another contract-based issue</a> in which multiple winning hands are returned in a post-game analysis if the highest winning hand was a high-card but the payout appears to be handled correctly so it's a minor issue.<br/>
 <br/>
-Finally, the <a href="https://github.com/monicanagent/cypherpoker.js/issues/7">player timeout problem</a> is still lingering but it takes a lesser precedence than the other problems above since a timeout on a successfully completed contract simply results in an "invalid contract" error.
+Finally, the <a href="https://github.com/monicanagent/cypherpoker.js/issues/7">player timeout problem</a> is still lingering but it takes a lesser precedence than the other problems above since a timeout on a successfully completed contract simply results in an "invalid contract" error.<br/>
 <br/>
 Work continues...
 </details>
-
+<br/>
 <details>
 <summary>Monday, November 19, 2018</summary>
 <br/>
