@@ -1,4 +1,17 @@
 <details open>
+<summary>Wednesday, November 21, 2018</summary>
+<br/>
+I've managed to take two steps back from yesterday's step forward and once again find myself dealing with non-restarting contracts. Some of the same symptoms have re-appeared but this time as a result of changes to other sections of the code.<br/>
+<br/>
+It's quite surprising to see that yesterday's changes worked as well as they did considering that I'd failed to update parts of the <a href="https://github.com/monicanagent/cypherpoker.js/blob/master/src/web/scripts/CypherPokerContract.js">CypherPokerContract</a> class to insolate the contract data from the game.<br/>
+<br/>
+Oh well, them's the breaks--it is a pretty complex piece of code after all. I can at least console myself with the fact that the contract interactions in CypherPoker.AS were also the trickiest parts to deal with and took a while to iron out. In addition, I can retrace my latest fixes since the issues seem to be appearing in the same locations (albeit not in exactly the same way).<br/>
+<br/>
+I've updated the <a href="https://github.com/monicanagent/cypherpoker.js/milestone/1">v0.2.3 milestone</a> to end this coming Friday and hopefully I can hit that date. It'll be about a week late but it should still leave sufficient time for the v0.3.0 updates. Fingers crossed.<br/>
+</details>
+<br/>
+<details>
+<br/>
 <summary>Tuesday, November 20, 2018</summary>
 <br/>
 I've confirmed that issue <a href="https://github.com/monicanagent/cypherpoker.js/issues/4">4</a> no longer appears and have also fixed the problem where contracts won't restart on subsequent hands--with <a href="https://github.com/monicanagent/cypherpoker.js/issues/9">one exception</a>: in a multi-player game (3+), if one or more players fold in a subsequent hand the post-game analysis doesn't kick off (i.e. the contract doesn't complete). This doesn't occur if all but one players have folded; in other words, at least two players must play the hand to the end.<br/>
