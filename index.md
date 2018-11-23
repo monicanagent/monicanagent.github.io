@@ -1,4 +1,21 @@
 <details open>
+<summary>Friday afternoon, November 23, 2018</summary>
+<br/>
+I skipped the update last night and decided instead to push on through  the darkness and then back into the bleary light of morning in order to finally fix <a href="https://github.com/monicanagent/cypherpoker.js/milestone/1">those critical issues that were plaguing version 0.2.3</a><br/>
+<br/>
+There are presently <a href="https://github.com/monicanagent/cypherpoker.js/milestones/v0.3.0"/>two remaining bugs</a> that have been added to the v0.3.0 release (one of them is new), neither of which are fatal or cause malfunctions so some of the user interface work can be done alongside the fix work.<br/>
+<br/>
+I'll see if I can knock off those two issues this weekend and think about how I want to approach the UI; I'm thinking somewhere along the lines of "clean, modern, easy to use, a <a href="https://en.wikipedia.org/wiki/White-label_product">white label</a>-ish prototype-ly kinda feel".<br/>
+<br/>
+Can I get to v0.3.0 by next Saturday? I'm optimistic I can, but that optimism is derived entirely from the lack complexity of the work I make for myself in the intervening time. We'll see.<br/>
+<br/>
+Right now, though, I'll settle for a few Zzz's<br/>
+<br/>
+</details>
+<br/>
+<details>
+<br/>
+<details>
 <summary>Wednesday, November 21, 2018</summary>
 <br/>
 I've managed to take two steps back from yesterday's step forward and once again find myself dealing with non-restarting contracts. Some of the same symptoms have re-appeared but this time as a result of changes to other sections of the code.<br/>
