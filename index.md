@@ -14,8 +14,6 @@ Right now, though, I'll settle for a few Zzz's<br/>
 </details>
 <br/>
 <details>
-<br/>
-<details>
 <summary>Wednesday, November 21, 2018</summary>
 <br/>
 I've managed to take two steps back from yesterday's step forward and once again find myself dealing with non-restarting contracts. Some of the same symptoms have re-appeared but this time as a result of changes to other sections of the code.<br/>
