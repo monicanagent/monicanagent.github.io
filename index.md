@@ -1,4 +1,21 @@
 <details open>
+<summary>Monday, November 26, 2018</summary>
+<br/>
+I managed to re-enable the post-game <a href="https://github.com/monicanagent/cypherpoker.js/blob/master/src/web/scripts/CypherPokerAnalyzer.js">analyzer</a>, the part of the code the verifies the cryptographic correctness and winning hand(s) in the browser (the <a href="https://github.com/monicanagent/cypherpoker.js/blob/master/src/server/api/CP_SmartContract.js">server contract</a> is expected to contain similar functionality).<br/>
+<br/>
+It works, so long as the next dealer doesn't hit the "RESTART" button for the table before the analyzer has a chance to spit out a final analysis (did the game verify correctly cryptographically? did the game adhere to established rules? who had the best / winning hands? what were everyone's best hands? etc). In that very possible condition, the analysis simply stops and the hand results fails to show up in the Hand History. It's not fatal--everything else resumes independently and correctly, including the contract--but it's less than ideal.<br/>
+<br/>
+I <a href="https://github.com/monicanagent/cypherpoker.js/commit/bbedca1bcde4117e6400f5589451c6920ed3cff7">added an update</a> on Saturday afternoon to the repository to address the associated issue and the previous paragraph describes why this is a <i>partial</i> fix.<br/>
+<br/>
+It's one of the proverbial dark 'n stormy nights here in Toronto, some slow Adele song is on the radio as the cold November rain falls on the pavement, and I think, it's okay to feel a little less than enthusiastic when starting the week like this.<br/>
+<br/>
+On the bright side, I haven't noticed any new issues which suggests that v0.3.0 is very much within reach. The fact that pieces of the game software can continue to function correctly despite other pieces failing--like the analyzer--also speaks to the strength and versatility of the underlying architecture.<br/>
+<br/>
+That being said, I guess I should also start doing some UI design work...<br/>
+<br/>
+</details>
+<br/>
+<details>
 <summary>Friday afternoon, November 23, 2018</summary>
 <br/>
 I skipped the update last night and decided instead to push on through  the darkness and then back into the bleary light of morning in order to finally fix <a href="https://github.com/monicanagent/cypherpoker.js/milestone/1">those critical issues that were plaguing version 0.2.3</a><br/>
