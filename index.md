@@ -7,7 +7,7 @@ It works, so long as the next dealer doesn't hit the "RESTART" button for the ta
 <br/>
 I <a href="https://github.com/monicanagent/cypherpoker.js/commit/bbedca1bcde4117e6400f5589451c6920ed3cff7">added an update</a> on Saturday afternoon to the repository to address the associated issue and the previous paragraph describes why this is a <i>partial</i> fix.<br/>
 <br/>
-It's one of the proverbial dark 'n stormy nights here in Toronto, some slow Adele song is on the radio as the cold November rain falls on the pavement, and I think, it's okay to feel a little less than enthusiastic when starting the week like this.<br/>
+It's one of those proverbial dark 'n stormy nights here in Toronto, some slow Adele song is on the radio as the cold November rain falls on the pavement, and I think, it's okay to feel a little less than enthusiastic when starting the week like this.<br/>
 <br/>
 On the bright side, I haven't noticed any new issues which suggests that v0.3.0 is very much within reach. The fact that pieces of the game software can continue to function correctly despite other pieces failing--like the analyzer--also speaks to the strength and versatility of the underlying architecture.<br/>
 <br/>
