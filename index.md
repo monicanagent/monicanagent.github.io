@@ -1,4 +1,11 @@
 <details open>
+<summary>Tuesday, November 27, 2018</summary>
+<br/>
+There wasn't much time to get in front of a keyboard today so there's nothing new to update. However, I did give some thoughts to the remaining issues and the new design, which I'll hopefully be able to share soon.<br/>
+<br/>
+</details>
+<br/>
+<details>
 <summary>Monday, November 26, 2018</summary>
 <br/>
 I managed to re-enable the post-game <a href="https://github.com/monicanagent/cypherpoker.js/blob/master/src/web/scripts/CypherPokerAnalyzer.js">analyzer</a>, the part of the code the verifies the cryptographic correctness and winning hand(s) in the browser (the <a href="https://github.com/monicanagent/cypherpoker.js/blob/master/src/server/api/CP_SmartContract.js">server contract</a> is expected to contain similar functionality).<br/>
