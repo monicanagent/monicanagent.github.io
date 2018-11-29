@@ -1,4 +1,17 @@
 <details open>
+<summary>Thursday, November 29, 2018</summary>
+<br/>
+There was little to update yesterday as I made little progress but today, at last, I made a breakthrough on the final major issue for v0.3.0.<br/>
+<br/>
+The <a href="https://github.com/monicanagent/cypherpoker.js/issues/10#issuecomment-442983023">issue notes</a> have been updated with my findings and at this point the problem can be considered fixed although its root remains: there are two key objects being used for analysis instead of the expected one.<br/>
+<br/>
+The current fix involves simply using the key object at the highest index (in the chain), but it's not a great fix since in the future the plan is to use (potentially) multiple keys in a hand/game. In other words, where only one key object is currently expected, in the future there could be more than one.<br/>
+<br/>
+In any event, the end is clearly in sight now and in the worst-case scenario I can simply upload the current fix an flag it for a future update (before multiple keys per hand are used).<br/>
+<br/>
+</details>
+<br/>
+<details>
 <summary>Tuesday, November 27, 2018</summary>
 <br/>
 There wasn't much time to get in front of a keyboard today so there's nothing new to update. However, I did give some thoughts to the remaining issues and the new design, which I'll hopefully be able to share soon.<br/>
