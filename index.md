@@ -1,4 +1,15 @@
 <details open>
+<summary>Monday, December 3, 2018</summary>
+<br/>
+Looks like I missed that end-of-week deadline for <a href="https://github.com/monicanagent/cypherpoker.js/milestone/2">v0.3.0</a> but I'm very happy that I managed to address those <a href="https://github.com/monicanagent/cypherpoker.js/commit/86d03b0637e7ae1e4601545971d64881c8f7fbbc">two outstanding issues</a>. Game play now appears to function correctly for any number of players. This includes restarts (multiple hands/games), post-game verification/validation, timeout/penalty/winning handling, and of course all of the existing cryptocurrency functionality such as deposits, transfers, and cashouts.<br/>
+<br/>
+Regarding the latest fixes, the in-between hands/games state is a really tricky one because it has to be able to accept a new game in the same instance while completing a potentially unresolved one in the background, especially with regard to the smart contract. I could've cheaped out here and just ignored potential lags in order to get it done quicker but I'm pretty sure it would've come back to bite me in the ass in the future ... right about the time I involved actual smart contracts.<br/>
+<br/>
+Anyways, I've extended the v0.3.0 due date by one more week in order to <a href="https://github.com/monicanagent/cypherpoker.js/issues/11">implement the user interface changes</a>. I don't expect too many bugs to come out of this as I'll mostly be shifting around HTML containers, updating stylesheets, and making minor modifications to the <a href="https://github.com/monicanagent/cypherpoker.js/blob/master/src/web/scripts/CypherPokerUI.js">CypherPokerUI</a> class. In other words, while the interaction flow will be different, there should be no significant logic changes to the core game code. By this time next week we should be looking at a fully-functional, debugged, and user-friendly beta!<br/>
+<br/>
+</details>
+<br/>
+<details>
 <summary>Thursday, November 29, 2018</summary>
 <br/>
 There was little to update yesterday as I made little progress but today, at last, I made a breakthrough on the final major issue for v0.3.0.<br/>
