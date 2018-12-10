@@ -1,4 +1,19 @@
 <details open>
+<summary>Monday, December 10, 2018</summary>
+<br/>
+The final touches are now being added to the v0.3.0 beta!<br/>
+<br/>
+The changes I ended up making were a bit more extensive than I'd initially planned but I'm quite pleased with the results.<br/>
+<br/>
+In a nutshell, the application now builds itself out of standalone external HTML snippets called templates which are added and removed to/from the page dynamically during runtime.<br/>
+<br/>
+This was done to make the content more manageable (as opposed to a single, flat HTML file), as well as making it much easier to insert metadata (replacing special tags in the HTML with dynamic data).<br/>
+<br/>
+One of the interesting results of this update has been that the <a href="https://github.com/monicanagent/cypherpoker.js/blob/master/src/web/scripts/CypherPokerUI.js">CypherPokerUI</a> class has gotten significantly smaller while the complexity has increased. Neat.<br/>
+<br/>
+I'm hoping to have v0.3.0-beta online later tonight or tomorrow.<br/>
+<br/>
+<details>
 <summary>Monday, December 3, 2018</summary>
 <br/>
 Looks like I missed that end-of-week deadline for <a href="https://github.com/monicanagent/cypherpoker.js/milestone/2">v0.3.0</a> but I'm very happy that I managed to address those <a href="https://github.com/monicanagent/cypherpoker.js/commit/86d03b0637e7ae1e4601545971d64881c8f7fbbc">two outstanding issues</a>. Game play now appears to function correctly for any number of players. This includes restarts (multiple hands/games), post-game verification/validation, timeout/penalty/winning handling, and of course all of the existing cryptocurrency functionality such as deposits, transfers, and cashouts.<br/>
