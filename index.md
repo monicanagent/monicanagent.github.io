@@ -1,4 +1,27 @@
 <details open>
+<summary>Friday, December 14, 2018</summary>
+<br/>
+Version <a href="https://github.com/monicanagent/cypherpoker.js/commit/82baa50646d0b6b7a834411cee29c8611409852f">0.3.0-beta.1</a> has now been committed to the repository and the <a href="https://monicanagent.github.io/cypherpoker.js/demo/web/demo">demo is live</a>!<br/>
+<br/>
+I <i>had</i> wanted it live earlier but once I got the code wrinkles worked out there turned out to be problems with the server hosting. Still, better late than never :)<br/>
+<br/>
+With this release there are many obvious user interface changes including colour scheme and style updates, a new font, and help sections for nearly everything that's visible.<br/>
+<br/>
+There are also some minor functional fixes, one of the major ones being not allowing players to bet more than their available in-game balance.<br/>
+<br/>
+After being looked at by someone other than myself it looks like the UI isn't as self-explanatory as I'd hoped so I'll be making some content changes this weekend. After that, over the next few weeks, I'll be making various live changes to fix any major issues and fill in some of the missing gaps (<a href="https://github.com/monicanagent/cypherpoker.js/milestone/3">version 0.3.1</a>).<br/>
+<br/>
+This will include adding some sort of "main menu" system so that players can get back to the account management functions as well as being able to return to the table creation / join interfaces. Furthermore, I'm also going to be testing out multiple concurrent tables (up until now I've been testing almost exclusively with one table at a time), updating the "join table" button interface to make it more prominent, adding a customizable player timeout (right now it defaults to 20 seconds), and adding an alias input option for players joining a table.<br/>
+<br/>
+I don't expect these to require any major coding efforts but some new functionality will need to be built, especially for the "main menu" portion.<br/>
+<br/>
+If I notice any other bugs or useful features, I'll add them to the 0.3.1 milestone and any other major inclusions will probably be scheduled for version 0.3.2<br/>
+<br/>
+In any event, v0.3.0 marks a major milestone--a playable, mostly complete, reliable public demo that answers the question: "but can I play it?"<br/>
+<br/>
+</details>
+<br/>
+<details>
 <summary>Monday, December 10, 2018</summary>
 <br/>
 The final touches are now being added to the v0.3.0 beta!<br/>
@@ -12,6 +35,8 @@ This was done to make the content more manageable (as opposed to a single, flat 
 One of the interesting results of this update has been that the <a href="https://github.com/monicanagent/cypherpoker.js/blob/master/src/web/scripts/CypherPokerUI.js">CypherPokerUI</a> class has gotten significantly smaller while the complexity has increased. Neat.<br/>
 <br/>
 I'm hoping to have v0.3.0-beta online later tonight or tomorrow.<br/>
+<br/>
+</details>
 <br/>
 <details>
 <summary>Monday, December 3, 2018</summary>
