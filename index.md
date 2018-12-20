@@ -1,4 +1,20 @@
 <details open>
+<summary>Thursday, December 20, 2018</summary>
+<br/>
+The content changes to v0.3.0-beta were <a href="https://github.com/monicanagent/cypherpoker.js/commit/5b403a93a564f0956ab5021fa721a4dc07be62dc#diff-0d801b3db70080bb0424eb8795fe7076">recently committed</a> and the demo has been updated with them.<br/>
+<br/>
+This should make the user interface <i>mostly</i> self-explanatory; you should be able to just load it up and play without any additional help. Of course I'll make changes if something's not clear but I don't expect any major updates on that end. At least not for this version.<br/>
+<br/>
+So I invite you to give it a whirl here:<br/>
+<br/><a href="https://monicanagent.github.io/cypherpoker.js/demo/web/">https://monicanagent.github.io/cypherpoker.js/demo/web/</a><br/>
+<br/>
+I'm going to take the next few days to regroup, plan out the strategy for rolling out the demo to the broader public as well as getting started on <a href="https://github.com/monicanagent/cypherpoker.js/milestone/3">version 0.3.1</a>.<br/>
+<br/>
+Things are about to start getting interesting! :D<br/>
+<br/>
+</details>
+<br/>
+<details>
 <summary>Friday, December 14, 2018</summary>
 <br/>
 Version <a href="https://github.com/monicanagent/cypherpoker.js/commit/82baa50646d0b6b7a834411cee29c8611409852f">0.3.0-beta.1</a> has now been committed to the repository and the <a href="https://monicanagent.github.io/cypherpoker.js/demo/web/demo">demo is live</a>!<br/>
